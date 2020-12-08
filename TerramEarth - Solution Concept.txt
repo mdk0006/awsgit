@@ -1,0 +1,133 @@
+Hello Cloud Gurus!
+We're continuing our run through the TerramEarth case study
+at the solution concept.
+There are 20 million TerramEarth vehicles
+in operation that collect 120 fields of data per second.
+So now we're getting a bit of information about the scope.
+Now these two pieces of information here
+are actually quite different.
+If you think about the 20 million TerramEarth vehicles
+that are currently in operation right now,
+what would it take for that to scale 10 times?
+How would you go from 20 million vehicles
+to 200 million vehicles?
+That would take a lot of stuff happening in the real world.
+Honest-to-goodness, physical machines would have to be built
+and sold and delivered and put into use.
+That 20 million number is definitely
+going to go up over time if TerramEarth
+is successful but it's not going to double overnight.
+The 120 fields of data per second,
+now that's a little bit different.
+What would it take for that to go up 10 times?
+Well, given that I don't know anything
+about the hardware out there,
+what would happen if it just took measurements
+10 times per second instead of once per second?
+The amount of data that we're getting
+from a particular vehicle definitely
+has the possibility of changing much more quickly.
+Now, it might be the case that that's actually impossible
+because the hardware that's actually sitting
+on those vehicles is incapable of collecting
+or sending the data any faster.
+But even with something like that,
+you could potentially imagine
+attaching a new piece of equipment
+to the existing 20 million vehicles
+and that would take a lot less work
+than actually sending out 20 million new vehicles, right?
+Anyway, let's keep reading.
+Data is stored locally on the vehicle
+and can be accessed for analysis when a vehicle is serviced.
+Okay, so here we see that the data
+is actually stuck on those vehicles for now
+but it's important information
+when something goes wrong
+or maybe when some preventative maintenance is happening.
+It continues on.
+The data is downloaded via a maintenance port.
+This same port can be used to adjust operational parameters,
+allowing the vehicles to be upgraded
+in the field with new computing modules.
+So the first question I have when I read this
+is what do they mean by computing module?
+I mean the first thing that I would think of
+was some piece of hardware that does computing,
+a module that they might attach to the vehicle.
+But the way this sentence is written confuses me a bit.
+The way I read it, they're trying to say
+that by adjusting these operational parameters,
+that's how you can upgrade them with new computing modules.
+So does that mean then
+that these are software computing modules?
+Something that will run on the computer
+that's in the vehicle?
+I'm not entirely sure, actually,
+so I'd want to keep an open mind
+about both of these possibilities.
+Let's continue on.
+Approximately 200,000 vehicles are connected
+to a cellular network,
+allowing TerramEarth to collect data directly.
+At a rate of 120 fields of data per second,
+with 22 hours of operation per day.
+Whoa, wait.
+Really?
+22 hours of operation per day?
+I told you I didn't really know mining and agriculture
+but they're certainly using these machines
+a lot more than I expected.
+In any case, apparently this means
+that TerramEarth collects a total
+of about nine terabytes a day from these connected vehicles.
+Now, okay, here we have some concrete data.
+At first I didn't know how big
+one of these fields of data was going to be
+but now we have all the numbers we need,
+so we can figure it out.
+So nine terabytes total per day divided by 200,000 vehicles
+means that each vehicle is producing
+about 45 megabytes of data a day.
+That makes it about two megabytes per hour,
+34 kilobytes per minute.
+And so if my calculations are correct,
+568 bytes per second,
+divide that through by the 120 fields,
+and it looks like each field
+is about four to five bytes on average.
+Well I'm not sure that we're going
+to wind up using this particular number,
+4.73 bytes per field,
+but it gives me a bit of a sense
+for what this thing is doing.
+I start imagining the things that it might be measuring.
+Is it maybe measuring the temperature in the air?
+Or maybe the temperature of the ground?
+Is that might be different?
+Could it maybe be measuring the color of the soil?
+Is that something that might be useful?
+It's probably also measuring a whole bunch of things
+about the machine itself, right?
+Engine temperature and pressure,
+the RPMs that it's turning,
+the vehicle itself, how quickly it's moving.
+Oh, and probably GPS coordinates
+of the vehicle as well, right?
+You would want to know exactly where it was
+when it took these different measurements, right?
+I'm sure there's some time data
+to synchronize everything,
+probably measurements about the different things
+that are attached to the vehicles,
+like how much fertilizer might be in a tank
+or which nozzles are turned on
+or which drills are running or who knows what?
+Like I said, this isn't my field, right?
+I'm just trying to come up with some ideas
+of how this might work,
+but still keeping an open mind
+that I could be totally wrong, of course.
+Well, in any case I think that's useful
+but let's move on to the existing technical environment,
+so please join me in the next lecture for that.
